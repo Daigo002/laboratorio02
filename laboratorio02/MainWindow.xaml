@@ -1,0 +1,33 @@
+﻿<Window x:Class="laboratorio02.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:laboratorio02"
+        mc:Ignorable="d"
+        Title="Inicio de Sesión" Height="300" Width="400">
+    <Grid Background="#ECEFF1">
+        <!-- Fondo con un color suave -->
+
+        <!-- Contenedor Principal -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Título -->
+            <TextBlock Text="Iniciar Sesión" FontSize="20" FontWeight="Bold" Margin="0 0 0 20"/>
+
+            <!-- Campos de Usuario y Contraseña -->
+            <StackPanel>
+                <StackPanel Margin="0 0 0 10">
+                    <Label Content="Nombre de Usuario:"/>
+                    <TextBox Name="txtUsername" Width="200"/>
+                </StackPanel>
+                <StackPanel Margin="0 0 0 10">
+                    <Label Content="Contraseña:"/>
+                    <PasswordBox Name="txtPassword" Width="200"/>
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Botón de Iniciar Sesión -->
+            <Button Content="Iniciar Sesión" Click="Button_click" Width="100" Background="#2196F3" Foreground="White" Padding="10" BorderThickness="0" Cursor="Hand"/>
+        </StackPanel>
+    </Grid>
+</Window>
